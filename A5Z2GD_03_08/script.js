@@ -1,0 +1,29 @@
+$(document).ready(function()
+    {
+    $(".fixed").hide();
+    /*$(fejlec).mouseleave(function()
+        {
+        alert("Információ!");
+        });*/
+    $(".gombsor").click(function()
+        {
+        $("ul li:first-child").hide("slow");
+        $("[href]").hide("slow");
+        });
+    $(k1).click(function()
+        {
+        $(p1).hide("slow");
+        });
+    $(k1).dblclick(function()
+        {
+        $(p2).hide("slow");
+        });
+    $(".jelentkezes").mouseover(function()
+        {
+        $(".fixed").show("slow");
+        });
+    $(".jelentkezes").mouseout(function()
+        {
+        $(".fixed").hide("slow");
+        });
+    });

@@ -1,0 +1,149 @@
+<!--
+   névtelen.html
+   
+   Copyright 2024 Kassai Gyula <kassaig@kassaig-Precision-M6800>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+
+<head>
+    <title>A5Z2GD_2</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="generator" content="Geany 1.38" />
+    <script type="text/javascript" src="jquery/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function()
+            {
+            $("button").click(function()
+                {
+                $("ul li:first-child").hide("slow");
+                $("[href]").hide("slow");
+                });
+            });
+    </script>
+</head>
+
+<body>
+
+    <h2 id="fejlec">jQuery feladatok</h2>
+
+    <p>A jQuery egy JavaScript programozói könyvtár, amelyet John Resing kezdett fejleszteni.</p>
+
+    <p><strong>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</strong></p>
+
+    <button><strong>Katints ide!</strong></button>
+
+    <br><br>
+    
+    <span id="linkszoveg">
+    The weboldal: 
+    <a href="https://unithe.hu">Tokaj Hegyalja Egyetem</a></span>
+
+    <ul>
+        <li>
+            Tíz
+        </li>
+        <li>
+            Húsz
+        </li>
+        <li>
+            Harminc
+        </li>
+    </ul>
+    <ul>
+        <li>
+            Tizedik
+        </li>
+        <li>
+            Huszadik
+        </li>
+        <li>
+            Harmincadik
+        </li>
+    </ul>
+    <table border="0">
+        <tr>
+            <td>
+                1111
+            </td>
+            <td>
+                aaaaaa
+            </td>
+            <td>
+                bbbbb
+            </td>
+        </tr>        
+        <tr>
+            <td>
+                2222
+            </td>
+            <td>
+                aaaaaa
+            </td>
+            <td>
+                bbbbb
+            </td>
+        </tr>        
+                <tr>
+            <td>
+                3333
+            </td>
+            <td>
+                aaaaaa
+            </td>
+            <td>
+                bbbbb
+            </td>
+        </tr>        
+        <tr>
+            <td>
+                4444
+            </td>
+            <td>
+                aaaaaa
+            </td>
+            <td>
+                bbbbb
+            </td>
+        </tr>        
+        <tr>
+            <td>
+                5555
+            </td>
+            <td>
+                aaaaaa
+            </td>
+            <td>
+                bbbbb
+            </td>
+        </tr>        
+    </table>
+    <br>
+    <button>Kattints ide_1!</button>
+    <button onclick="$(this).hide('slow')">Kattints ide_2!</button>
+    <button onclick="$(fejlec).hide('slow');">Kattints ide_3!</button>
+    <button onclick="$(linkszoveg).hide('slow');">Kattints ide_4!</button>
+    <button onclick="$('tr:odd').hide('slow');">Kattints ide_5!</button>
+</body>
+
+</html>

@@ -34,22 +34,15 @@
 <h2>A5Z2GD_konyv.json elemei:</h2>
 
 <script>
-const KGYObj = {
-   "name":"KGY",
-   "age":39, 
-   "cars":[
-      {"name":"Toyota", "models":["CHR", "Corolla", "Proace"]},
-      {"name":"Ford", "models":["Kuga", "Mondeo", "Mustang"]},
-      {"name":"BMW", "models":["320", "X3", "X5"]},
-      {"name":"Fiat", "models":["500", "Panda", "Tipo"]} ]};
-   for (var i = KGYObj.length - 1; i >= 0; i--) 
-      {
-      KGYObj[i]
-      }
-
+const obj1 = {"szerzo": "Nyékyné Dr. Gaizler Judit", "cim": "Java 2 I-II - Utikalauz rogramozóknak 5.0", "ev": 2009};
+const obj2 = {"szerzo": "Reiter István", "cim": "C# programozás lépésről lépésre", "ev": 2018};
+document.write("<strong>Szerző: </strong>" + obj1.szerzo + "<br>");
+document.write("<strong>Könyv címe: </strong>" + obj1.cim + "<br>");
+document.write("<strong>Kiadás éve: </strong>" + obj1.ev + "<br><br>");
+document.write("<strong>Szerző: </strong>" + obj2.szerzo + "<br>");
+document.write("<strong>Könyv címe: </strong>" + obj2.cim + "<br>");
+document.write("<strong>Kiadás éve: </strong>" + obj2.ev + "<br>");
 </script>
-
-
 </body>
 
 </html>

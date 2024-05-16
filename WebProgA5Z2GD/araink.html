@@ -1,0 +1,68 @@
+<script>
+    $('.vonal20').viewportChecker({
+	offset: 200,
+	callbackFunction: function(elem)
+		{
+		setTimeout(function()
+			{
+				$('.vonal20').animate({
+					width: '+=20%'
+				  }, 1000);
+			},100);
+		}
+	});
+    $('.elsobekezd').viewportChecker({
+	offset: 200,
+	callbackFunction: function(elem)
+		{
+		setTimeout(function()
+			{
+				$('.elsobekezd').animate({
+					opacity: '1'
+				  }, 1000);
+			},100);
+		}
+	});
+    $.getJSON("arak.json", function(data)
+        {
+            
+            $(".tartalom").append("<br><br>");
+
+            $(".tartalom").append("</ul><br><b>Induló tanfolyamok:</b><br><br>");
+
+            $(".tartalom").append("<table style='align-items: center; align-content: center; position: absolute; left: 20%; width: 60%; height: auto;border: 0;'><tr><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>Kategória</td><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>Kezdés</td><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>Időtartam</td><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>Helyszín</td><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>Oktató</td><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>Típus</td></tr></table><br><br>");
+
+            for ( let i = 0; i < data["kategoria"].length; i ++ )
+                {
+                $(".tartalom").append("<table style='align-items: center; align-content: center; position: absolute; left: 20%; width: 60%; height: auto;border: 0;'><tr><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>" + data["kategoria"][i].neve + "</td><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>" + data["kategoria"][i].kezdet.nap + "</td><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>" + data["kategoria"][i].kezdet.hossz + "</td><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>" + data["kategoria"][i].helyszin + "</td><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>" + data["kategoria"][i].oktato + "</td><td style='border: 2px solid; border-color: #FFFFFF; width: 16.66%;'>" + data["kategoria"][i].tipus + "</td></tr></table><br><br>");
+                }
+            $(".tartalom").append("");
+
+
+            
+            //alert("itt");
+            $(".tartalom").append("<br><br><b>Címünk:</b><br>");
+            $(".tartalom").append("&nbsp;" + data.cim["iranyitoszam"]);
+            $(".tartalom").append("&nbsp;" + data.cim["varos"]);
+            $(".tartalom").append("&nbsp;" + data.cim["utca"] + "<br><br>");
+
+            $(".tartalom").append("<b>Telefonszám:</b><br><ul>");
+
+            for ( let i = 0; i < data["telefonszam"].length; i ++ )
+                {
+                $(".tartalom").append("<li>" + data["telefonszam"][i].tipus + ":&nbsp;" + data["telefonszam"][i].szam + "</li>");
+                }
+
+            
+        });
+</script>
+
+<div class="elem">
+    <strong class="elsobekezd" style="opacity: 0.1;">
+        <p class="nagyalahuzott">
+            Aktuális áraink
+        </p>
+        <div class="vonal20"></div>
+        <div class="tartalom"></div>
+    </strong>
+</div>

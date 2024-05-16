@@ -1,0 +1,58 @@
+<script>
+    $('.vonal20').viewportChecker({
+	offset: 200,
+	callbackFunction: function(elem)
+		{
+		setTimeout(function()
+			{
+				$('.vonal20').animate({
+					width: '+=20%'
+				  }, 1000);
+			},100);
+		}
+	});
+    $('.elsobekezd').viewportChecker({
+	offset: 200,
+	callbackFunction: function(elem)
+		{
+		setTimeout(function()
+			{
+				$('.elsobekezd').animate({
+					opacity: '1'
+				  }, 1000);
+			},100);
+		}
+	});
+</script>
+
+<div class="elem">
+    <strong class="elsobekezd" style="opacity: 0.1;">
+        <p class="nagyalahuzott">
+            Jelentkezz tanfolyamunkra!
+        </p> 
+
+        <p>
+            Ha már jó ideje tervezed a jogsi megszerzését, akkor van egy tuti tippünk:<br>
+            <section style="font-size: 36px;">
+                Most szerezz jogosítványt és tiéd a szabadság!
+            </section>
+            <div class="vonal20"> </div>
+        </p>
+        <p>
+            <form method="post">
+                <input id="veznev" type="text" value="Vezetéknév" onclick="$(this).attr('value', '')"><br>
+                <input id="kernev" type="text" value="Keresztnév" onclick="$(this).attr('value', '')"><br>
+                <input id="email" type="email" value="Email cím" onclick="$(this).attr('value', '')"><br>
+                <input id="szuldat" type="date"><br>
+                <textarea id="uzenet" rows="4" cols="50" onclick="$(this).text('');">Ide írhatod ha szeretnél a jelentkezéssel kapcsolatban üzenni valamit.</textarea><br>
+                Milyen kategóriára szeretnél jelentkezni?<br>
+                A<input id="a" type="checkbox">
+                B<input id="b" type="checkbox">
+                C<input id="c" type="checkbox">
+                D<input id="d" type="checkbox">
+                E<input id="e" type="checkbox">
+                <input type="submit" value="Jelenkezés">
+            </form>
+        </p>
+    </strong>
+</div>

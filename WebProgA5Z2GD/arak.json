@@ -1,0 +1,76 @@
+{
+    "kategoria": 
+        [
+        {
+        "neve": "A korlátozott",
+        "kezdet":
+            {
+            "nap": "Folyamatos",
+            "hossz": "2 hónap"
+            },
+        "helyszin": "online",
+        "oktato": "Monok Tamás",
+        "tipus": "Gyakorlat+elmélet"
+        },
+        {
+        "neve": "B",
+        "kezdet":
+            {
+            "nap": "Folyamatos",
+            "hossz": "2 hónap"
+            },
+        "helyszin": "online",
+        "oktato": "Monok Tamás",
+        "tipus": "Gyakorlat+elmélet"
+        },
+        {
+        "neve": "C",
+        "kezdet":
+            {
+            "nap": "Folyamatos",
+            "hossz": "2 hónap"
+            },
+        "helyszin": "online",
+        "oktato": "Monok Tamás",
+        "tipus": "Gyakorlat+elmélet"
+        },
+        {
+        "neve": "D",
+        "kezdet":
+            {
+            "nap": "Folyamatos",
+            "hossz": "2 hónap"
+            },
+        "helyszin": "online",
+        "oktato": "Monok Tamás",
+        "tipus": "Gyakorlat+elmélet"
+        },
+        {
+        "neve": "E",
+        "kezdet":
+            {
+            "nap": "Folyamatos",
+            "hossz": "2 hónap"
+            },
+        "helyszin": "online",
+        "oktato": "Monok Tamás",
+        "tipus": "Gyakorlat+elmélet"
+        }
+        ],
+    "cim":
+        {
+        "iranyitoszam": "3980",
+        "varos": "Sátoraljaújhely",
+        "utca": "Kazinczy u. 25."
+        },
+    "telefonszam": [
+        {
+        "tipus": "Mobil",
+        "szam": "+36:20/417-67-67"
+        },
+        {
+        "tipus": "Mobil",
+        "szam": "+36:20/246-39-11"
+        }
+    ]
+}
